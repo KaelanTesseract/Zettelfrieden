@@ -1,4 +1,4 @@
-FROM python:3.11-slim-bookworm
+FROM python:3.15-slim-bookworm
 
 # Configure apt for reliable downloads with retries and timeouts
 RUN echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80retries && \
